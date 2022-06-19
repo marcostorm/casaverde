@@ -21,9 +21,20 @@
     width: 18.75rem;
 }
 
+.produto__imagem--detalhe{
+    box-sizing: border-box;
+
+}
+
 .produto__conteudo{
     position: relative;
     z-index: 2;
+}
+
+.produto__detalhe{
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-position: top -4rem right;
 }
 
 .produto__titulo{
@@ -48,3 +59,4 @@
     margin-left: 1.75rem;
     background-image: url(../../img/icones/seta.svg);
 }
+

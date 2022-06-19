@@ -1,5 +1,6 @@
 .cartao-de-video{
     margin-bottom: 2rem;
+    list-style-type:none;
 }
 
 .cartao-de-video__video{

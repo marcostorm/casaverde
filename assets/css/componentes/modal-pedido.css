@@ -1,0 +1,27 @@
+.modal-pedido{
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-image: url(../../img/splash-modal.png);
+    background-position: top 0 right;
+    background-repeat: no-repeat;
+    background-color: var(--branco);
+
+    position: absolute;
+}
+
+.modal-pedido__imagem{
+    top: 2rem;
+    padding-left: 8.25rem;
+}
+
+.modal__texto{
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.modal__titulo{
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}

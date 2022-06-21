@@ -1,0 +1,59 @@
+.meu-carrinho {  
+    display: grid;
+    grid-template-columns: 10rem 10rem 5.2rem;
+    grid-template-rows: 0.8fr 0.9fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "carrinho__imagem carrinho__nome-produto carrinho__fechar"
+      "carrinho__imagem carrinho__preco carrinho__quantidade"
+      ". . .";
+    background-color: var(--branco);
+  }
+
+.cabecalho-carrinho{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+    background-color: var(--branco);
+}
+  
+.carrinho__titulo{ 
+    grid-area: carrinho__titulo; 
+    width: 12rem;
+}
+  
+.carrinho__titulo--icone{ 
+    grid-area: carrinho__titulo--icone; 
+    width: 1.75rem;
+
+}
+  
+.carrinho__imagem { 
+    grid-area: carrinho__imagem; 
+    width: 10rem;
+}
+
+.carrinho__nome-produto { 
+    grid-area: carrinho__nome-produto; 
+}
+  
+.carrinho__fechar {
+    grid-area: carrinho__fechar; 
+}
+
+.carrinho__preco { 
+    grid-area: carrinho__preco; 
+}
+
+.carrinho__quantidade { 
+    grid-area: carrinho__quantidade; 
+}
+  

@@ -42,3 +42,7 @@ body {
 .texto {
     line-height: 26px;
 }
+
+hr{
+    width: 100%;
+}

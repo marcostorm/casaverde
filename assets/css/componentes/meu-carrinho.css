@@ -1,6 +1,6 @@
 .meu-carrinho {  
     display: grid;
-    grid-template-columns: 10rem 10rem 5.2rem;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 0.8fr 0.9fr 1.6fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -9,6 +9,7 @@
       "carrinho__imagem carrinho__preco carrinho__quantidade"
       ". . .";
     background-color: var(--branco);
+    align-items: center;
   }
 
 .cabecalho-carrinho{
@@ -19,26 +20,29 @@
     box-sizing: border-box;
     width: 100%;
 
-    padding-top: .75rem;
+    padding: .75rem;
     padding-bottom: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
 
     background-color: var(--branco);
 }
   
 .carrinho__titulo{ 
     grid-area: carrinho__titulo; 
-    width: 12rem;
 }
   
 .carrinho__titulo--icone{ 
     grid-area: carrinho__titulo--icone; 
-    width: 1.75rem;
-
+    width: 1rem;
+    display: flex;
+    align-self: baseline;
 }
   
 .carrinho__imagem { 
     grid-area: carrinho__imagem; 
-    width: 10rem;
+    width: 4.5rem;
+    margin-left: 1rem;
 }
 
 .carrinho__nome-produto { 
@@ -47,6 +51,9 @@
   
 .carrinho__fechar {
     grid-area: carrinho__fechar; 
+    width: 1rem;   
+    justify-self: end;
+
 }
 
 .carrinho__preco { 
@@ -54,6 +61,16 @@
 }
 
 .carrinho__quantidade { 
-    grid-area: carrinho__quantidade; 
+    grid-area: carrinho__quantidade;
+    justify-self: end;
+}
+
+.carrinho__quantidade::after{
+    content: url('../../img/icones/chevron.svg');
+    padding-left: 0.5rem;
 }
   
+.resumo-pedido{
+    background-color: var(--branco);
+    padding-top: 3rem;
+}

@@ -1,15 +1,16 @@
 .meu-carrinho {  
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 0.8fr 0.9fr 1.6fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.8fr 0.9fr;
+    gap: 0.75rem 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "carrinho__imagem carrinho__nome-produto carrinho__fechar"
-      "carrinho__imagem carrinho__preco carrinho__quantidade"
-      ". . .";
+      "carrinho__imagem carrinho__preco carrinho__quantidade";
     background-color: var(--branco);
     align-items: center;
+    padding-bottom: 2rem;
+
   }
 
 .cabecalho-carrinho{
@@ -30,6 +31,8 @@
   
 .carrinho__titulo{ 
     grid-area: carrinho__titulo; 
+    padding-bottom: 1rem;
+    margin-left: 0.625rem;
 }
   
 .carrinho__titulo--icone{ 
@@ -47,6 +50,7 @@
 
 .carrinho__nome-produto { 
     grid-area: carrinho__nome-produto; 
+    color:var(--preto);
 }
   
 .carrinho__fechar {
@@ -58,11 +62,13 @@
 
 .carrinho__preco { 
     grid-area: carrinho__preco; 
+    font-weight: bold;
 }
 
 .carrinho__quantidade { 
     grid-area: carrinho__quantidade;
     justify-self: end;
+    font-weight: bold;
 }
 
 .carrinho__quantidade::after{
@@ -72,5 +78,46 @@
   
 .resumo-pedido{
     background-color: var(--branco);
-    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr;
+    gap: 0rem 0rem;
+    row-gap: .75rem;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "resumo__produto resumo__produto-valor"
+    "resumo__taxa-entrega resumo__taxa-entrega-valor"
+    "resumo__subtotal resumo__subtotal-valor";
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+
+.resumo__produto{
+    grid-area:resumo__produto;
+}
+
+.resumo__produto-valor{
+    grid-area:resumo__produto-valor;
+    justify-self: end;
+}
+
+.resumo__taxa-entrega{
+    grid-area:resumo__taxa-entrega;
+}
+
+.resumo__taxa-entrega-valor{
+    grid-area:resumo__taxa-entrega-valor;
+    justify-self: end;
+}
+
+.resumo__subtotal{
+    grid-area:resumo__subtotal;
+    color: var(--preto);
+}
+
+.resumo__subtotal-valor{
+    grid-area: resumo__subtotal-valor;
+    color: var(--preto);
+    justify-self: end;
 }

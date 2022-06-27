@@ -62,13 +62,11 @@
 
 .carrinho__preco { 
     grid-area: carrinho__preco; 
-    font-weight: bold;
 }
 
 .carrinho__quantidade { 
     grid-area: carrinho__quantidade;
     justify-self: end;
-    font-weight: bold;
 }
 
 .carrinho__quantidade::after{
@@ -89,7 +87,7 @@
     "total__taxa-entrega total__taxa-entrega-valor"
     "total__subtotal total__subtotal-valor";
     padding-bottom: 2rem;
-    font-weight: bold;
+    font-weight: var(--peso-destaque);
 }
 
 .total__produto{

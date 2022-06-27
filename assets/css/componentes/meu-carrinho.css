@@ -76,7 +76,7 @@
     padding-left: 0.5rem;
 }
   
-.resumo-pedido{
+.total-pedido{
     background-color: var(--branco);
     display: grid;
     grid-template-columns: auto auto ;
@@ -85,39 +85,38 @@
     row-gap: .75rem;
     grid-auto-flow: row;
     grid-template-areas: 
-    "resumo__produto resumo__produto-valor"
-    "resumo__taxa-entrega resumo__taxa-entrega-valor"
-    "resumo__subtotal resumo__subtotal-valor";
+    "total__produto total__produto-valor"
+    "total__taxa-entrega total__taxa-entrega-valor"
+    "total__subtotal total__subtotal-valor";
     padding-bottom: 2rem;
     font-weight: bold;
 }
 
-
-.resumo__produto{
-    grid-area:resumo__produto;
+.total__produto{
+    grid-area:total__produto;
 }
 
-.resumo__produto-valor{
-    grid-area:resumo__produto-valor;
+.total__produto-valor{
+    grid-area:total__produto-valor;
     justify-self: end;
 }
 
-.resumo__taxa-entrega{
-    grid-area:resumo__taxa-entrega;
+.total__taxa-entrega{
+    grid-area:total__taxa-entrega;
 }
 
-.resumo__taxa-entrega-valor{
-    grid-area:resumo__taxa-entrega-valor;
+.total__taxa-entrega-valor{
+    grid-area:total__taxa-entrega-valor;
     justify-self: end;
 }
 
-.resumo__subtotal{
-    grid-area:resumo__subtotal;
+.total__subtotal{
+    grid-area:total__subtotal;
     color: var(--preto);
 }
 
-.resumo__subtotal-valor{
-    grid-area: resumo__subtotal-valor;
+.total__subtotal-valor{
+    grid-area: total__subtotal-valor;
     color: var(--preto);
     justify-self: end;
 }

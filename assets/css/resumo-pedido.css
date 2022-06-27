@@ -1,0 +1,27 @@
+.resumo-pedido{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.finalizar-pedido{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.finalizar-pedido__formulario{
+    opacity: 0.9;
+    background-color: var(--branco);
+}
+
+.titulo-formulario{
+    font-weight: var(--peso-destaque);
+    color: var(--preto);
+    text-size-adjust: var(--tamanho-titulo);
+}
+.secao-formulario{
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+}

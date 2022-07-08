@@ -16,9 +16,10 @@
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 0.725rem;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 85%; 
+    margin-bottom: 0;
   }
   
   /* The Close Button */
@@ -26,7 +27,7 @@
     color: #aaa;
     float: right;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: var(--peso-destaque);
   }
   
   .close:hover,
@@ -35,3 +36,20 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .cabecalho-carrinho{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: .75rem;
+    padding-bottom: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+
+    background-color: var(--branco);
+}
+  

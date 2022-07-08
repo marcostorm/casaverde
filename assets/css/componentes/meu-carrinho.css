@@ -9,7 +9,7 @@
       "carrinho__imagem carrinho__preco carrinho__quantidade";
     background-color: var(--branco);
     align-items: center;
-    padding-bottom: 2rem;
+    margin-bottom: 0rem;
   }
 
 .cabecalho-carrinho{
@@ -27,6 +27,13 @@
 
     background-color: var(--branco);
 }
+
+.carrinho__titulo--icone:hover,
+  .carrinho__titulo--icone:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
   
 .carrinho__titulo{ 
     grid-area: carrinho__titulo; 
@@ -85,7 +92,6 @@
     "total__produto total__produto-valor"
     "total__taxa-entrega total__taxa-entrega-valor"
     "total__subtotal total__subtotal-valor";
-    padding-bottom: 2rem;
     font-weight: var(--peso-destaque);
 }
 

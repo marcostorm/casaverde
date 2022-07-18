@@ -16,4 +16,33 @@
 
 .cabecalho__carrinho{
     width: 1.75rem;
+    align-self: flex-end;
+}
+
+.navbar{
+    display: none;
+}
+
+@media screen and (min-width: 1440px){
+    .cabecalho{
+        width: 100%;        
+        
+    }
+    .cabecalho__carrinho{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;        
+        color:var(--preto);
+        font-weight: var(--peso-destaque);        
+    }
+
+    .item-menu::after{
+        content: "/";
+        padding-left: 1rem;
+        padding-right: 1rem;        
+    }
+
 }

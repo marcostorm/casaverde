@@ -34,6 +34,7 @@
 
     .navbar{
         display: flex;
+        align-items: center;
         flex-direction: row;        
         color:var(--preto);
         font-weight: var(--peso-destaque);        

@@ -47,3 +47,16 @@ hr{
     width: 100%;
     opacity: 0.9;
 }
+
+@media screen and (min-width: 1440px){
+    body{
+        background-color: var(--branco);
+        background: none;
+        padding-left: 15rem;
+
+    }
+
+    .titulo--destaque{
+        font-size: 4rem;
+    }
+}

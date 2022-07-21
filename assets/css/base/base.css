@@ -49,11 +49,19 @@ hr{
 }
 
 @media screen and (min-width: 1440px){
-    body{
-        background-color: var(--branco);
-        background: none;
-        padding-left: 15rem;
+    :root{
+        background-image: url(../../img/splash-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top 0 right;
+        background-size: 50rem;
 
+    }
+
+    body{        
+        background-color: var(--branco);
+        background: none;                        
+        padding-left: 15rem;
+        margin-right: 15rem;
     }
 
     .titulo--destaque{

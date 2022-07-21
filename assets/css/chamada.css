@@ -30,11 +30,7 @@
 
 @media screen and (min-width: 1440px) {
     .chamada{
-        padding-top: 4rem;
-        background-image: url(../../assets/img/splash-desktop.png);
-        background-position: top -4rem right;
-        background-repeat: no-repeat;
-        
+        background-image: none;
         position: relative;
     }
 

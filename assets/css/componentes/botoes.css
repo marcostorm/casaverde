@@ -21,3 +21,10 @@
     border: 1px solid var(--amarelo);
     margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 1440px) {
+    .botao{
+        width: 15%;
+    }
+    
+}

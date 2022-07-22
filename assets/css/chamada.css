@@ -39,10 +39,23 @@
     }
 
     .chamada__imagem--desktop{
-        display: inherit;        
+        display: block;        
         position: absolute;
-        top: 1.25rem;
+        top: -10rem;
         right: 0;
-    
+        width: auto;
+        height: auto;
+        max-width: 50rem;
+        max-height: 50rem;
+        z-index: -1;
+    }
+
+    .chamada__texto{
+        text-align: justify;
+        width: 40%;
+    }
+
+    #titulo-planta{
+        width: 30%;
     }
 }

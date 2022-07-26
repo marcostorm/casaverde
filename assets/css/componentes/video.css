@@ -42,3 +42,17 @@
 
     margin-bottom: .5rem;
 }
+
+@media screen and (min-width:1440px){
+    .videos{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 0.8fr;
+        gap: 0.75rem 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "cartao-de-video cartao-de-video cartao-de-video cartao-de-video";
+       
+    }
+    
+}

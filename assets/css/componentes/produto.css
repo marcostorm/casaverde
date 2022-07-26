@@ -69,3 +69,27 @@
     box-shadow: 10px 10px 30px var(--preto-transparente);
     margin-bottom: 3.625rem;
 }
+ 
+@media screen and (min-width:1440px){
+    .produtos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 0.8fr 0.9fr;
+        gap: 0.75rem 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "produto produto produto"
+          "produto produto produto";
+    }
+
+    .produto__titulo {
+        font-size: 2rem;
+    }
+
+    .produto__imagem{    
+        position: absolute;
+        left: 1.25rem;                
+        width: 11rem;
+    }
+
+}

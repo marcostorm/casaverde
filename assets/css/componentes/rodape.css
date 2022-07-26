@@ -39,3 +39,27 @@
 
     margin-bottom:  .5rem;
 }
+
+.rodape__imagem{
+    display: none;
+}
+
+@media screen and (min-width:1440px){
+    .rodape{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+
+        background-color: var(--branco);
+        background-image: url(../../img/splash-rodape-dekstop.svg);
+        background-position: bottom 1rem left;
+        
+    }
+
+    .rodape__imagem{    
+        display: block;
+        width: 16rem;
+    }
+    
+}

@@ -1,36 +1,60 @@
 .testemunho{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 3rem;            
+    display:none;
 }
 
-.testemunho__corpo{
-    padding-left: 2rem;
-}
+@media screen and (min-width:1440px){
+    
+    .testemunho{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 3rem;
+        margin-top: 5rem; 
+        margin-bottom:5rem           
+    }
+    
+    .testemunho__corpo{
+        margin-left: 8rem;
+    }
+    
+    .testemunho__titulo{
+        font-size: 2.4rem;
+        text-align: justify;
+    }
+    
+    .testemunho__texto-chamada{
+        text-align: justify;
+    }
+    
+    .testemunho__texto-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .testemunho__circulo{
+        position: absolute;
+    }
+    
+    .testemunho__container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .testemunho__elipse{
+        padding-right: 1rem;
+        padding-left: 3rem;
+        align-self: flex-start;
+        width: 4rem;
+    }
 
-.testemunho__titulo{
-    font-size: 2.4rem;
-    text-align: justify;
-}
+    .testemunho__imagem{
+        position: absolute;
+        z-index: 1;
+    }
 
-.testemunho__texto-chamada{
-    text-align: justify;
-}
-
-.testemunho__texto-container{
-    display: flex;
-    flex-direction: row;
-}
-
-.testemunho__circulo{
-    position: absolute;
-}
-
-.testemunho__container{
-    display: flex;
-    flex-direction: row;
-}
-
-.testemunho__elipse{
-    padding-right: 1rem;
+    .testemunho__retangulo{
+        z-index: -1;
+        margin-left: -15rem;
+        margin-top: -5rem;
+        position: relative;
+    }
 }

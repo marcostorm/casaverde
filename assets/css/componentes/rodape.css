@@ -44,22 +44,23 @@
     display: none;
 }
 
+.rodape__splash--desktop{
+    display: none;
+}
+
 @media screen and (min-width:1440px){
     .rodape{
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-around;
-
-        background-color: var(--branco);
-        background-image: url(../../img/splash-rodape-dekstop.svg);
-        background-position: bottom 1rem left;
-        
+        background-image: none;    
     }
 
     .rodape__imagem{    
         display: block;
         width: 16rem;
+        z-index: 1;        
     }
-    
+
 }

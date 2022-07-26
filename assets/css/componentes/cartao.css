@@ -7,9 +7,37 @@
     box-shadow: 10px 10px 30px var(--preto-transparente);
 }
 
+.cartao__imagem--desktop{
+    display: none;       
+}
+
 @media screen and (min-width:1440px){
     .cartao{
-        margin-top:9rem
+        margin-top:10rem;
+        margin-bottom: 4rem;
+        margin-left:0rem;
+
+        padding-left: 10rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+
+        display:flex;
+        flex-direction: row;
+        align-items: center;
     }
-    
+
+    .cartao__imagem--desktop{
+        display: block;
+        
+        margin-top: -2rem;
+        margin-right: 2rem;
+        
+        width: auto;
+        height: auto;
+    }
+
+    .cartao__corpo{
+        position: relative;
+    }
+
 }

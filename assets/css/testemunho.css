@@ -57,4 +57,32 @@
         margin-top: -5rem;
         position: relative;
     }
+
+    .testemunho__rodape{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .testemunho__seta--icone{
+        display: flex;
+        flex-direction: row;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left:-2rem                
+    }
+    
+    .testemunho__autor{
+        margin-left: 8rem;
+    }
+    
+    #nome-autor{
+        color: var(--preto);
+    }
+    
+    #seta-anterior{
+        width: 1rem;
+        margin-right: 3rem;
+    }
 }

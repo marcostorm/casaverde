@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/chamada.css">
     <link rel="stylesheet" href="assets/css/detalhe-produto.css">
     <link rel="stylesheet" href="assets/css/componentes/meu-carrinho.css">
+    <link rel="stylesheet" href="assets/css/testemunho.css">
     
 </head>
 <body>
@@ -44,7 +45,7 @@
             <img src="assets/img/detalhe-produto-1.png" alt="Foto do produto" class="produto__imagem--detalhe">
             <div id="botoes__produto--detalhe">
                 <button class="botao" id="myBtn">Comprar Agora</button>
-                <button class="botao botao--alternativo">Adicionar ao Carrinho</button>
+                <button class="botao botao--alternativo" id="botaoCarrinho">Adicionar ao Carrinho</button>
             </div>
             <div id="myModal" class="modal">
                 <div class="modal-content">
@@ -87,8 +88,41 @@
     </section>
     <section class="container produto__descricao">
         <p class="titulo titulo--destaque">Descrição do produto</p>
-        <p class="texto">Sed arcu risus, posuere viverra imperdiet eu, commodo interdum enim. Suspendisse finibus, quam dictum</p>
+        <p class="texto">Sed arcu risus, posuere viverra imperdiet eu, commodo interdum enim. Suspendisse finibus, quam dictum vestibulum tristique, nisi lectus luctus tellus, eget faucibus tortor magna vel arcu. Aliquam nisl ligula, pretium ut erat pharetra, volutpat tempus quam. Quisque sed velit nec ex tincidunt auctor eu sit amet libero. 
+
+            Aliquam pulvinar, lacus id efficitur rutrum, lacus ex pretium libero, non euismod sem neque sit amet elit. Sed varius augue eget augue cursus, vel maximus sem rutrum. Vivamus dapibus lacus a dui tristique, sodales cursus justo gravida. Mauris vehicula lobortis diam porttitor scelerisque. Sed ac quam ligula. Phasellus convallis ipsum nec lorem tincidunt viverra. Sed elementum nunc velit, id congue mi posuere eget. Phasellus imperdiet est ac ex blandit fringilla. Vivamus eget aliquet leo, eu scelerisque quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
         <a href="" class="produto__comprar">Leia Mais</span></a>
+    </section>
+    <section class="container testemunho">
+        <img src="assets/img/cliente2.png" alt="Foto da cliente" class="testemunho__imagem">
+        <img src="assets/img/Rectangle.png" class="testemunho__retangulo">
+        <div class="testemunho__corpo">
+           <span class="titulo--destaque testemunho__titulo">
+               Não acredite em nós 
+           </span>
+           <span class="titulo--destaque testemunho__titulo">veja o que os clientes tem a dizer</span>
+           <div class="testemunho__container">
+               <img src="assets/img/circulo.png" class="testemunho__elipse">                                    
+                <p class="texto testemunho__texto-chamada">
+                            Nullam a orci vitae orci fringilla pulvinar sit amet quis felis. Quisque vel ornare arcu. 
+                            Fusce urna quam, tempus vitae vehicula et, efficitur non sem. Morbi tincidunt congue lorem eu tempor. 
+                            Nulla bibendum ligula lorem, vel sollicitudin nibh scelerisque non. Proin ut nisi congue, sodales tellus at, 
+                            consectetur tellus. Praesent ac elit quis purus congue bibendum. Etiam nec massa ac enim vehicula maximus. 
+                            Pellentesque semper fermentum maximus. Integer dignissim libero felis, id tempor purus viverra non. 
+                            Quisque sodales non lacus ut tincidunt. Cras in venenatis leo.” </p>                                              
+                        </div>
+                        <div class="testemunho__rodape">
+                            <div class="testemunho__autor">
+                                <p class="texto texto titulo" id="nome-autor">Juliana Ferraz</p>
+                                <p class="texto">Cliente desde 2018</p> 
+                            </div>
+                            <div class="testemunho__seta--icone">
+                                <img src="assets/img/icones/seta-depoimento2.svg" id="seta-anterior">
+                                <img src="assets/img/icones/seta-depoimento.svg" id="seta-proximo">                                    
+                            </div>
+                        </div>
+       </div>
     </section>
 
     <section class="ofertas container">
@@ -96,7 +130,7 @@
             Conheça produtos
             <span class="titulo--destaque">similares</span>
         </h2>
-        <ul>
+        <ul class="produtos">
             <li class="produto">
                 <img src="assets/img/produto-04.png" alt="Foto do produto" class="produto__imagem">
                 <div class="produto__conteudo">
